@@ -78,6 +78,7 @@
   }
 }
 .hero-2{
+  margin-bottom: 5rem;
   margin-top: 6rem;
   text-align: center;
   & p{
@@ -87,30 +88,30 @@
   &:hover{
     & .t-1{
     opacity: 1;
-    transition-delay: 260ms;
+    transition-delay: 160ms;
     
    
   }
   & .t-1 span{
-    animation: mudar-span 500ms 260ms ease both;
+    animation: mudar-span 400ms 160ms ease both;
     
   }
   & .t-2{
     opacity: 1;
-    transition-delay: 1260ms;
+    transition-delay: 1160ms;
     
   }
   & .t-2 span{
-    animation: mudar-span 500ms 1260ms ease both;
+    animation: mudar-span 400ms 1160ms ease both;
     
   }
   & .t-3{
     opacity: 1;
-    transition-delay: 2260ms;
+    transition-delay: 2160ms;
     
   }
   & .t-3 span{
-    animation: mudar-span 500ms 2260ms ease both;
+    animation: mudar-span 400ms 2160ms ease both;
     
   }
   & > img{
@@ -118,11 +119,11 @@
   }
    & > div:nth-child(3) img[src*="ouija"]{
       scale: 1;
-      transition-delay: 760ms;
+      transition-delay: 660ms;
     }
     & > div:nth-child(3) img[src*="ball"]{
       scale: 1;
-      transition-delay: 1760ms;
+      transition-delay: 1660ms;
     }
     }
     
@@ -135,16 +136,16 @@
   }
   & .t-1{
     opacity: 0.5;  
-    transition: opacity 500ms  ease ;
+    transition: opacity 400ms  ease ;
   }
   & .t-2{
     opacity: 0.5;
-    transition: opacity 500ms  ease ;
+    transition: opacity 400ms  ease ;
   }
  
   & .t-3{
     opacity: 0.5;
-    transition: opacity 500ms  ease ;
+    transition: opacity 400ms  ease ;
   }
   
   

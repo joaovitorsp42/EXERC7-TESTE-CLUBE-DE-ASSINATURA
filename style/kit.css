@@ -1,0 +1,107 @@
+.mensal-kit{
+  padding-top: 14rem;
+  & h1{
+    color: var(--text-title);
+    font: var(--title-sm);
+  }
+  & p{
+    color:var(--text-body) ;
+    font: var(--body-lg);
+  }
+  & > div{
+    text-align: center;
+  }
+  & .title-kit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    gap: 1rem ;
+    padding-bottom: 5px;
+
+    & img{
+    filter: drop-shadow(0 0 28px var(--pink-base));
+  }
+  }
+  & .book-kit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+      margin-top: 9.5rem;
+      margin-bottom: 10rem;
+
+      max-width: 54rem;
+      height: 50rem;
+
+      position: relative;
+      & .t-1{
+        position: absolute;
+        top: 5%;
+        left: 0;
+      }
+      & img[src*="arrow-1"]{
+        position: absolute;
+        top: 10%;
+        left: 7%;
+        z-index: -1;
+      }
+
+      & img[src*="book"]{
+        width: 29rem;
+        height: 38rem;
+        z-index: 1;
+       position: absolute;
+       top: 6,4%;
+       left: 1;
+      }
+      & img[src*="pin"]{
+        width: 13.875rem;
+        height: 15.875rem;
+        rotate:-8deg;
+        position: absolute;
+        bottom: 3.3%;
+        left: 7%;
+      }
+      & img[src*="arrow-2"]{
+        position: absolute;
+        left: 1%;
+        bottom: 30%;
+      }
+      & .t-2{
+        position: absolute;
+        left: -2%;
+        bottom: 48%;
+      }
+      & img[src*="yellow"]{
+        width: 10.75rem;
+        height: 33.5rem;
+        rotate:12deg;
+        z-index: 0;
+        position: absolute;
+        top: -2.5%;
+        right: 10%;
+      }
+      & img[src*="purple"]{
+        width: 10.75rem;
+        height: 33.5rem;
+        rotate:22deg;
+        z-index: -1;
+        position: absolute;
+        top: 7.9% ;
+        right: -2.5%;
+      }
+      & img[src*="arrow-3"]{
+        position: absolute;
+        right: 5%;
+        bottom: 9%;
+        z-index: -1;
+    }
+    
+    & .t-3{
+      position: absolute;
+      bottom: 4%;
+      right: 11.5%;
+    }
+  }
+}
