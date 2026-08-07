@@ -33,18 +33,52 @@
 
       max-width: 54rem;
       height: 50rem;
-
+      &:hover{
+        & .t-1{
+        transform: translateY(0) translateX(0)  ;
+      }
+      & img[src*="arrow-1"]{
+        transform: translateX(0)  translateY(0);
+      }
+       & img[src*="pin"]{
+        transform: translateX(0)  translateY(0) rotate(0);
+       }
+       & img[src*="arrow-2"]{
+        transform: translateX(0)  translateY(0);
+       }
+       & .t-2{
+        transform: translateX(0)  translateY(0);
+       }
+        & img[src*="yellow"]{
+          transform: translateX(0)  translateY(0) rotate(12deg);
+        }
+        & img[src*="purple"]{
+          transform: translateX(0)  translateY(0) rotate(22deg);
+        }
+         & img[src*="arrow-3"]{
+          transform: translateX(0)  translateY(0);
+         }
+         & .t-3{
+          transform: translateX(0)  translateY(0);
+         }
+    }
       position: relative;
       & .t-1{
         position: absolute;
         top: 5%;
         left: 0;
+        transform:translateY(500%) translateX(200%)  ;
+        transition: transform 500ms ease;
+        
       }
       & img[src*="arrow-1"]{
         position: absolute;
         top: 10%;
         left: 7%;
         z-index: -1;
+         transform: translateX(150%)  translateY(400%);
+         transition: transform 500ms ease;
+        
       }
 
       & img[src*="book"]{
@@ -54,6 +88,7 @@
        position: absolute;
        top: 6,4%;
        left: 1;
+       filter: drop-shadow(0 0 300px var(--pink-low));
       }
       & img[src*="pin"]{
         width: 13.875rem;
@@ -62,46 +97,82 @@
         position: absolute;
         bottom: 3.3%;
         left: 7%;
+        transform: translateX(100%)  translateY(-20%) rotate(1deg) ;
+         transition: transform 500ms ease;
+        
+        
       }
       & img[src*="arrow-2"]{
         position: absolute;
         left: 1%;
         bottom: 30%;
+        z-index: -2;
+        transform: translateX(250%)  translateY(-80%);
+         transition: transform 500ms ease;
       }
       & .t-2{
         position: absolute;
         left: -2%;
         bottom: 48%;
+        transform: translateX(200%) translateY(-400%);
+        transition: transform 500ms ease;
+        
       }
       & img[src*="yellow"]{
         width: 10.75rem;
         height: 33.5rem;
-        rotate:12deg;
+        
         z-index: 0;
         position: absolute;
         top: -2.5%;
         right: 10%;
+        transform: translateX(-100%) translateY(33%);
+        transition: transform 500ms ease;
+        
       }
       & img[src*="purple"]{
         width: 10.75rem;
         height: 33.5rem;
-        rotate:22deg;
+
         z-index: -1;
         position: absolute;
         top: 7.9% ;
         right: -2.5%;
+        transform: translateX(-150%) translateY(15%);
+        transition: transform 500ms ease;
       }
       & img[src*="arrow-3"]{
         position: absolute;
         right: 5%;
         bottom: 9%;
         z-index: -1;
+        transform: translateX(-150%) translateY(-50%);
+        transition: transform 500ms ease;
     }
     
     & .t-3{
       position: absolute;
       bottom: 4%;
       right: 11.5%;
+      transform: translateX(-150%) translateY(-500%);
+      transition: transform 500ms ease;
     }
+  }
+}
+@keyframes text-appear{
+  50%{
+    transform: translate(-5px);
+  }
+  75%{
+    transform: translate(2px);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+@keyframes text-disapear{
+  
+  100%{
+    transform: translateX(500px) translateY(0);
   }
 }
