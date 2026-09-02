@@ -46,3 +46,10 @@ body{
   zoom: 0.5;
   background-color: var(--shape-background);
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style: none;
+}
