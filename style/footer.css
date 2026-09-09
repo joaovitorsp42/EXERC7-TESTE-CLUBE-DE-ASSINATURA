@@ -1,7 +1,7 @@
 footer{
   display: flex;
   justify-content: space-between;
-  background-image: url(../assets/book-trace-background.png);
+  background-image: url(../assets/footer-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-block: 10.625rem 6.375rem; 
