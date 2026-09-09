@@ -6,7 +6,7 @@ footer{
   background-repeat: no-repeat;
   padding-block: 10.625rem 6.375rem; 
   .line{
-    border: 1px solid var(--shape-stroke);
+    border-top: 1px solid var(--shape-stroke);
   }
 
   & a{
