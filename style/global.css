@@ -33,7 +33,7 @@
   --body-xs:400 0.75rem/1.4 "Raleway", sans-serif;
   --button:700 0.875rem/1.4 "Raleway", sans-serif;
   --link:400 0.875rem/1.4 "Raleway", sans-serif;
-  --tag:700 0.875rem/1.4 "Raleway", sans-serif;
+  --tag:700 0.625rem/1.4 "Raleway", sans-serif;
 }
 
 a{
@@ -43,7 +43,6 @@ a{
    padding-inline: 10rem; 
 }
 body{
-  zoom: 0.5;
   background-color: var(--shape-background);
 }
 a{

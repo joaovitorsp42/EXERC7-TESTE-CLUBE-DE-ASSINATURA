@@ -1,0 +1,71 @@
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/assets/book-trace-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 10.625rem 6.375rem; 
+  .line{
+    border: 1px solid var(--shape-stroke);
+  }
+
+  & a{
+    color: var(--blue-base);
+  }
+  & a:hover{
+    color: var(--text-title);
+  }
+  
+  & .footer-left{
+    display: grid;
+    gap: 0.75rem ;
+    & .links{
+      display: flex;
+      gap: 3.5px;
+      & a{
+        width: 2.5rem;
+        height: 2.5rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5rem;
+        position: relative;
+        z-index: 1;
+        
+      }
+      & a:hover::before{
+        scale: 1;
+      }
+      & a::before {
+        content: "";
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        z-index: -1;
+
+        background: var(--shape-stroke);
+        position: absolute;
+        top: 0;
+        left: 0;
+        scale: 0;
+        transition: scale 200ms;
+      }
+    }
+  }
+  & .footer-right{
+    display: flex;
+    gap: 3.5rem;
+    & h3{
+      padding-bottom: 0.75rem;
+      font: var(--title-xs);
+      color: var(--text-body);
+    }
+    & > div{
+      color: var(--vlue-light);
+      font: var(--link);
+      display: grid;
+      gap: 0.75rem;
+    }
+  }
+}
